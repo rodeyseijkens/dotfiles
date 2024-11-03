@@ -11,7 +11,7 @@
   config = lib.mkIf config.gnome.enable {
     environment = {
       systemPackages = with pkgs; [
-        morewaita-icon-theme
+        papirus-icon-theme
         qogir-icon-theme
         gnome-extension-manager
         wl-clipboard
@@ -56,9 +56,9 @@
     programs.dconf.profiles.gdm.databases = [
       {
         settings = {
-          "org/gnome/desktop/peripherals/touchpad" = {
-            tap-to-click = true;
-          };
+          # "org/gnome/desktop/peripherals/touchpad" = {
+          #   tap-to-click = true;
+          # };
           "org/gnome/desktop/interface" = {
             cursor-theme = "Qogir";
           };

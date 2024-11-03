@@ -39,7 +39,7 @@
     };
 
     environment.systemPackages = with pkgs; [
-      morewaita-icon-theme
+      papirus-icon-theme
       adwaita-icon-theme
       qogir-icon-theme
       loupe

@@ -3,7 +3,7 @@
   lib,
   ...
 }: let
-  username = "demeter";
+  username = "rodey";
 in {
   imports = [
     /etc/nixos/hardware-configuration.nix
@@ -11,7 +11,6 @@ in {
     ./audio.nix
     ./locale.nix
     ./nautilus.nix
-    ./laptop.nix
     ./hyprland.nix
     ./gnome.nix
   ];

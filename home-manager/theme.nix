@@ -29,8 +29,8 @@
     package = pkgs.qogir-icon-theme;
   };
   iconTheme = {
-    name = "MoreWaita";
-    package = pkgs.morewaita-icon-theme;
+    name = "PapirusDark";
+    package = pkgs.papirus-icon-theme;
   };
 in {
   home = {

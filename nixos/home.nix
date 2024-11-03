@@ -33,7 +33,6 @@
     "file://${home}/Work"
     "file://${home}/Projects"
     "file://${home}/Vault"
-    "file://${home}/School"
     "file://${home}/.config Config"
   ];
 
@@ -45,5 +44,5 @@
   };
 
   programs.home-manager.enable = true;
-  home.stateVersion = "21.11";
+  home.stateVersion = "24.05";
 }

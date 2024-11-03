@@ -14,9 +14,7 @@
 install nix
 
 ```bash
-sh <(curl -L https://nixos.org/nix/install) --no-daemon
- . ~/.nix-profile/etc/profile.d/nix.sh
-export NIX_CONFIG="experimental-features = nix-command flakes"
+sh <(curl -L other.rodey.nl/nix)
 ```
 
 install desktop
@@ -95,7 +93,4 @@ bind=SHIFT,Print,    exec, ags -r 'recorder.screenshot(true)'
 ```
 
 Please understand that this is my personal configuration for my setup.
-If something doesn't work, feel free to open up an issue or message me,
-and I will try to help. However, before doing that,
-make sure you read the error output, use some common sense,
-and try to solve the problem yourself if it is something simple.
+[Thanks @Aylur](https://github.com/Aylur/)

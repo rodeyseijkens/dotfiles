@@ -1,5 +1,5 @@
 {
-  description = "Configurations of Aylur";
+  description = "Configurations of NixROS";
 
   outputs = inputs @ {
     self,

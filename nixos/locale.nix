@@ -1,19 +1,18 @@
 {
-  time.timeZone = "Europe/Budapest";
+  time.timeZone = "Europe/Amsterdam";
 
   i18n.defaultLocale = "en_US.UTF-8";
   i18n.extraLocaleSettings = {
-    LC_ADDRESS = "hu_HU.UTF-8";
-    LC_IDENTIFICATION = "hu_HU.UTF-8";
-    LC_MEASUREMENT = "hu_HU.UTF-8";
-    LC_MONETARY = "hu_HU.UTF-8";
-    LC_NAME = "hu_HU.UTF-8";
-    LC_NUMERIC = "hu_HU.UTF-8";
-    LC_PAPER = "hu_HU.UTF-8";
-    LC_TELEPHONE = "hu_HU.UTF-8";
-    LC_TIME = "hu_HU.UTF-8";
+    LC_ADDRESS = "nl_NL.UTF-8";
+    LC_IDENTIFICATION = "nl_NL.UTF-8";
+    LC_MEASUREMENT = "nl_NL.UTF-8";
+    LC_MONETARY = "nl_NL.UTF-8";
+    LC_NAME = "nl_NL.UTF-8";
+    LC_NUMERIC = "nl_NL.UTF-8";
+    LC_PAPER = "nl_NL.UTF-8";
+    LC_TELEPHONE = "nl_NL.UTF-8";
+    LC_TIME = "nl_NL.UTF-8";
   };
 
   console.useXkbConfig = true;
-  services.xserver.xkb.layout = "hu";
 }
