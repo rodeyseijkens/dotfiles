@@ -6,16 +6,11 @@
     experimental-features = "nix-command flakes";
     auto-optimise-store = true;
   };
-
-  # camera
-  programs.droidcam.enable = true;
-
-  # virtualisation
-  programs.virt-manager.enable = true;
-  virtualisation = {
-    podman.enable = true;
-    docker.enable = true;
-    libvirtd.enable = true;
+  #Garbage colector
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 7d";
   };
 
   # dconf
@@ -33,11 +28,27 @@
   services = {
     xserver = {
       enable = true;
+      videoDrivers = ["nvidia"];
       excludePackages = [pkgs.xterm];
     };
     printing.enable = true;
     flatpak.enable = true;
     openssh.enable = true;
+  };
+
+  #NvidiaConfig
+  hardware.opengl = {
+    enable = true;
+    driSupport = true;
+    driSupport32Bit = true;
+  };
+
+  hardware.nvidia = {
+    modesetting.enable = true;
+    open = false;
+
+    nvidiaSettings = true;
+    package = config.boot.kernelPackages.nvidiaPackages.latest;
   };
 
   # logind
@@ -47,26 +58,8 @@
     HandleLidSwitchExternalPower=ignore
   '';
 
-  # kde connect
-  networking.firewall = rec {
-    allowedTCPPortRanges = [
-      {
-        from = 1714;
-        to = 1764;
-      }
-    ];
-    allowedUDPPortRanges = allowedTCPPortRanges;
-  };
-
   # network
   networking.networkmanager.enable = true;
-
-  # bluetooth
-  hardware.bluetooth = {
-    enable = true;
-    powerOnBoot = false;
-    settings.General.Experimental = true; # for gnome-bluetooth percentage
-  };
 
   # bootloader
   boot = {

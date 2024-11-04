@@ -17,12 +17,6 @@ install nix
 sh <(curl -L other.rodey.nl/nix)
 ```
 
-install desktop
-
-```bash
-nix profile install github:Aylur/dotfiles
-```
-
 login into Hyprland and run
 
 ```bash
