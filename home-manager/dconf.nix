@@ -2,7 +2,7 @@
 with lib.hm.gvariant; {
   dconf.settings = {
     "org/gnome/desktop/input-sources" = {
-      sources = [(mkTuple ["xkb" "hu"])];
+      sources = [(mkTuple ["xkb" "us" "nl"])];
       xkb-options = ["terminate:ctrl_alt_bksp"];
     };
 
@@ -123,7 +123,7 @@ with lib.hm.gvariant; {
     };
 
     "system/locale" = {
-      region = "hu_HU.UTF-8";
+      region = "nl_NL.UTF-8";
     };
 
     "org/virt-manager/virt-manager/connections" = {

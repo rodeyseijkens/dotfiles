@@ -8,7 +8,6 @@
 
   home = {
     sessionVariables = {
-      QT_XCB_GL_INTEGRATION = "none"; # kde-connect
       NIXPKGS_ALLOW_UNFREE = "1";
       NIXPKGS_ALLOW_INSECURE = "1";
       BAT_THEME = "base16";
@@ -35,13 +34,6 @@
     "file://${home}/Vault"
     "file://${home}/.config Config"
   ];
-
-  services = {
-    kdeconnect = {
-      enable = true;
-      indicator = true;
-    };
-  };
 
   programs.home-manager.enable = true;
   home.stateVersion = "24.05";

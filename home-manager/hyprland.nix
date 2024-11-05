@@ -41,13 +41,11 @@ in {
       exec-once = [
         "ags -b hypr"
         "hyprctl setcursor Qogir 24"
-        "fragments"
       ];
 
       monitor = [
-        # "eDP-1, 1920x1080, 0x0, 1"
-        # "HDMI-A-1, 2560x1440, 1920x0, 1"
-        ",preferred,auto,1"
+        "DP-1, 2560x1440@165, 0x0, 1"
+        "DP-2, 2560x1440@165, -2560x0, 1"
       ];
 
       general = {
@@ -61,7 +59,7 @@ in {
       };
 
       input = {
-        kb_layout = "hu,us";
+        kb_layout = "us,nl";
         follow_mouse = 1;
         touchpad = {
           natural_scroll = "yes";
@@ -100,7 +98,6 @@ in {
         (f "Color Picker")
         (f "xdg-desktop-portal")
         (f "xdg-desktop-portal-gnome")
-        (f "de.haeckerfelix.Fragments")
         (f "com.github.Aylur.ags")
         "workspace 7, title:Spotify"
       ];

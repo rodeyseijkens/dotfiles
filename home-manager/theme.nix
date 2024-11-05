@@ -78,11 +78,6 @@ in {
     '';
   };
 
-  qt = {
-    enable = true;
-    platformTheme.name = "kde";
-  };
-
   home.file.".local/share/flatpak/overrides/global".text = let
     dirs = [
       "/nix/store:ro"
